@@ -241,7 +241,7 @@ void editardatoslibro(struct Libro *a, int *cont){
             switch (opc)
             {
             case 1:
-                printf("Ingrese el nuevo título del libro:\n");
+                printf("Ingrese el nuevo titulo del libro:\n");
                 fgets(a->titulo, sizeof(a->titulo), stdin);
                 BorrarSaltolinea(a->titulo);
                 break;
@@ -291,4 +291,5 @@ void eliminarlibro(struct Libro *a, int *cont){
     {
         printf("No se encontro el libro con el ID proporcionado.\n");
     }
+
 }
